@@ -30,6 +30,7 @@ use crate::result::{Result, Error};
 ///
 /// If the incoming request is not a valid WebSocket request, the guard
 /// forwards with a status of `BadRequest`. The guard never fails.
+#[derive(Debug, Clone)]
 pub struct WebSocket {
     config: Config,
     key: String,
